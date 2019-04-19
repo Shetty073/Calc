@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Abour Calc</title>
+    <style>
+        body {
+            font-size: 15px !important;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        #container {
+        display: flex;           /* establish flex container */
+        flex-direction: column;  /* make main axis vertical */
+        justify-content: center; /* center items vertically, in this case */
+        align-items: center;     /* center items horizontally, in this case */
+        height: 100%;
+        }
+
+        .box {
+            width: 100%;;
+            margin: 5px;
+            text-align: center;     /* will center text in <p>, which is not a flex item */
+        }
+
+        p {
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+
+        a {
+            color: gray;
+            text-decoration: none;
+            text-decoration-style: none;
+        }
+
+        a:visited {
+            color: gray;
+            text-decoration: none;
+            text-decoration-style: none;
+        }
+
+        h1 {
+            margin-top: 3px;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Calc</h1>
+            <p>A simple calculator</p>
+            <p>&copy;2019 Ashish Shetty</p>
+            <p>MIT license</p>
+            <p><a href="www.alphasierra.ml">www.alphasierra.ml</a></p>
+            <small><p>Built with: Node <script>document.write(process.versions.node)</script></p></small>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!-- 500x450 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="author" content="Ashish Shetty">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc simple calculator</title>
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <table style="background-color: rgb(30, 30, 30);">
+        <tr>
+            <td id="txtareatd" colspan="4">
+                <textarea name="txt1" id="dis" cols="12" rows="1" dir="rtl" maxlength="12" readonly autofocus></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><input class="calbut" id="7" type="button" value="7" onclick="put(this.value)"></td>
+            <td><input class="calbut" id="8" type="button" value="8" onclick="put(this.value)"></td>
+            <td><input class="calbut" id="9" type="button" value="9" onclick="put(this.value)"></td>
+            <td><input class="calbut lbut" id="+" type="button" value="+" onclick="put(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input class="calbut" id="4" type="button" value="4" onclick="put(this.value)"></td>
+            <td><input class="calbut" id="5" type="button" value="5" onclick="put(this.value)"></td>
+            <td><input class="calbut" id="6" type="button" value="6" onclick="put(this.value)"></td>
+            <td><input class="calbut lbut" id="-" type="button" value="-" onclick="put(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input class="calbut" id="1" type="button" value="1" onclick="put(this.value)"></td>
+            <td><input class="calbut" id="2" type="button" value="2" onclick="put(this.value)"></td>
+            <td><input class="calbut" id="3" type="button" value="3" onclick="put(this.value)"></td>
+            <td><input class="calbut lbut" id="*" type="button" value="*" onclick="put(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input class="calbut lbut" id="." type="button" value="." onclick="put(this.value)"></td>
+            <td><input class="calbut" id="0" type="button" value="0" onclick="put(this.value)"></td>
+            <td><input class="calbut lbut" id="=" id="clr" type="button" value="=" onclick="calculate(this.value)"></td>
+            <td><input class="calbut lbut" id="/" type="button" value="/" onclick="put(this.value)"></td>
+        </tr>
+    </table>
+    <!-- jQuery import -->
+    <script src="./js/jquery-3.4.0.min.js"></script>
+    <!-- My script -->
+    <script src="./js/myscript.js"></script>
+</body>
+</html>
